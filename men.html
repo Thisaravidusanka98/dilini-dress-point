@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>DressUp.lk — Men</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header small">
+<div class="container header-row">
+<div class="brand" onclick="location.href='index.html'">DressUp.lk</div>
+<div class="search-row">
+<input class="search" placeholder="Search...">
+<div class="price-label">LKR</div>
+<button class="cart">Cart <span id="cartCount3">0</span></button>
+</div>
+</div>
+<nav class="categories">
+<div class="container">
+<a href="index.html">Home</a>
+<a href="women.html">Women</a>
+<a class="active">Men</a>
+<a href="kids.html">Kids</a>
+</div>
+</nav>
+</header>
+
+
+<main class="container page">
+<aside class="sidebar">
+<h4>Filter</h4>
+
+<table>
+<tr><td><label><input type="radio" name="sort" value="popular" checked> Popular</label></td></tr>
+<tr><td><label><input type="radio" name="sort" value="low"> Low price to high</label></td></tr>
+<tr><td><label><input type="radio" name="sort" value="high"> High price to low</label></td></tr>
+</table></aside>
+
+
+<section class="products">
+    <div class="product-card">
+    <img src="images/men1.jpg" alt="Linen Pants">
+    <h4>Linen Pants</h4>
+    <p>LKR 3,200</p>
+    <p>Sizes: XS, S, M, L</p>
+    <button>Add to cart</button>
+    <button>View</button>
+    </div>
+    <div class="product-card">
+    <img src="images/men2.jpg" alt="Linen Pants">
+    <h4>Linen Pants</h4>
+    <p>LKR 3,200</p>
+    <p>Sizes: XS, S, M, L</p>
+    <button>Add to cart</button>
+    <button>View</button>
+	 </div>
+	<div class="product-card">
+    <img src="images/men3.jpg" alt="Linen Pants">
+    <h4>Linen Pants</h4>
+    <p>LKR 3,200</p>
+    <p>Sizes: XS, S, M, L</p>
+    <button>Add to cart</button>
+    <button>View</button>
+	 </div>
+	
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">© <span id="year3"></span> DressUp.lk</div>
+</footer>
+
+
+<script src="js/script.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCategoryPage('Men'));</script>
+</body>
+</html>

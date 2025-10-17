@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>DressUp.lk — Kids</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header small">
+<div class="container header-row">
+<div class="brand" onclick="location.href='index.html'">DressUp.lk</div>
+<div class="search-row">
+<input class="search" placeholder="Search...">
+<div class="price-label">LKR</div>
+<button class="cart">Cart <span id="cartCount4">0</span></button>
+</div>
+</div>
+<nav class="categories">
+<div class="container">
+<a href="index.html">Home</a>
+<a href="women.html">Women</a>
+<a href="men.html">Men</a>
+<a class="active">Kids</a>
+</div>
+</nav>
+</header>
+
+
+<main class="container page">
+<aside class="sidebar">
+<h4>Filter</h4>
+<label><input type="radio" name="sortKids" value="popular" checked> Popular</label>
+<label><input type="radio" name="sortKids" value="low"> Low price to high</label>
+<label><input type="radio" name="sortKids" value="high"> High price to low</label>
+</aside>
+
+
+<section class="products">
+<h2>Kids</h2>
+<div id="productsGridKids" class="grid"></div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">© <span id="year4"></span> DressUp.lk</div>
+</footer>
+
+
+<script src="js/script.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => initCategoryPage('Kids'));</script>
+</body>
+</html>

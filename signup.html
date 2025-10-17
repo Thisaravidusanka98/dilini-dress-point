@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | DressUp.lk</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #f5b700, #ffda77);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .signup-container {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      width: 400px;
+      padding: 30px 35px;
+      text-align: center;
+    }
+
+    .signup-container h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .signup-container form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .signup-container input,
+    .signup-container select,
+    .signup-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .signup-container textarea {
+      resize: none;
+    }
+
+    .signup-container button {
+      background-color: #f4b400;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .signup-container button:hover {
+      background-color: #e09c00;
+    }
+
+    .signup-container p {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .signup-container a {
+      color: #f4b400;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signup-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Create Your Account</h2>
+    <form action="#" method="post">
+      <input type="text" name="fullname" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required />
+      <input type="text" name="address" placeholder="Home Address" required />
+      <select name="gender" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="password" name="password" placeholder="Password" minlength="6" required />
+      <input type="password" name="confirm_password" placeholder="Confirm Password" minlength="6" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</body>
+</html>
